@@ -1,57 +1,14 @@
-import React, { use, useState } from "react";
-import logo from "../../public/Modern_Letter_S_Logo-removebg-preview (1).png";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { NavLink } from "react-router";
-import { AuthContext } from "../../public/Provider/AuthProvider";
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { auth } from "../../public/Images/firebase.init";
-
-const Registration = () => {
-
-  const [showPassword, setShowPassword] = useState(false);
-
-  const {createAccount,setuser} = use(AuthContext);
+import React, { useState } from 'react';
+import Navbar from '../Components/Navbar';
 
 
-const googleProvider = new GoogleAuthProvider();
+const Profile = () => {
+      const [showPassword, setShowPassword] = useState(false);
+    return (
+        <>
+        <Navbar></Navbar>
 
-  const handleGoogleRegister = () => {
-    signInWithPopup(auth, googleProvider)
-      .then((result) => {
-        const user = result.user;
-        console.log("Google User:", user);
-        alert("Registration Successfully");
-        window.location.href = "/";
-      })
-      .catch((error) => {
-        console.error("Google login error:", error.message);
-        alert(error.message);
-      });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const email = e.target.email.value;
-    const password = e.target.password.value;
-    console.log("Email:", email, "Password:", password);
-    createAccount(email, password).then((result) => {
-      const user = result.user;
-      console.log(user);
-      setuser(user);
-      alert("Account Created Successfully");
-    }).catch((error) => {
-      console.log(error.message);
-      alert(error.message);
-    })
-
-
-  }
-
-  
-  return (
-    <>
-
-      <div className="min-h-screen flex items-center justify-center bg-base-500 px-4 py-12">
+        <div className="min-h-screen flex items-center justify-center bg-base-500 px-4 py-12">
         <div className="w-full max-w-md border-2 border-indigo-600 bg-base-500 text-white rounded-lg p-8">
           <div className="text-center">
             <img alt="Your Company" src={logo} className="mx-auto h-30 w-30" />
@@ -60,7 +17,7 @@ const googleProvider = new GoogleAuthProvider();
             </h2>
           </div>
 
-          <form action="#" method="POST" onSubmit={handleSubmit} className="mt-8 space-y-6">
+          <form action="#" method="POST" className="mt-8 space-y-6">
             <div>
               <label
                 htmlFor="email"
@@ -131,7 +88,7 @@ const googleProvider = new GoogleAuthProvider();
               <h1 className="text-center py-2">Or Connect With</h1>
               <hr className="border-b border-indigo-600 mb-3" />
               <div className="">
-                <button className="btn bg-white text-black border-[#e5e5e5] w-full" onClick={handleGoogleRegister}>
+                <button className="btn bg-white text-black border-[#e5e5e5] w-full">
                   <svg
                     aria-label="Google logo"
                     width="16"
@@ -176,8 +133,8 @@ const googleProvider = new GoogleAuthProvider();
           </p>
         </div>
       </div>
-    </>
-  );
+        </>
+    );
 };
 
-export default Registration;
+export default Profile;

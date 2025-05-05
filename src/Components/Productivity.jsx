@@ -1,15 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { use, useEffect, useState } from 'react';
 import Marquee from 'react-fast-marquee';
-import { useLoaderData } from 'react-router'; 
+import { NavLink, useLoaderData } from 'react-router'; 
+import { AuthContext } from '../../public/Provider/AuthProvider';
 
 const Productivity = () => {
     const data = useLoaderData();
     const [productivity, setProductivity] = useState([]);
+     const {user}=use(AuthContext);
 
     useEffect(() => {
+      if (Array.isArray(data)) {
         const productivityFilter = data.filter((item) => item.category === "Productivity");
         setProductivity(productivityFilter); 
-    }, [data]); 
+    }
+      }
+
+       , [data]); 
 
 
 
@@ -20,24 +26,27 @@ const Productivity = () => {
             <Marquee>
             <div className='flex gap-3 pt-3 pl-3'>
                 {productivity.map((item, index) => (
-                    <div key={index} className="card bg-base-100 image-full w-96 shadow-sm">
+                    <div key={index} className="w-96 bg-base-100 shadow-md rounded-xl overflow-hidden">
                     <figure>
                       <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                        alt="Shoes" />
+                        src={item.banner}
+                        alt={item.name}
+                        className="h-48 w-full object-cover"
+                      />
                     </figure>
-                    <div className="card-body">
-                      <h2 className="card-title">{item.name}</h2>
-                      <p>{item.description}</p>
-                      <div className='flex justify-between'>
-                      <p>Rating : {item.rating}</p>
-                      <p>Downloads : {item.downloads}</p>
+                    <div className="p-4">
+                      <h2 className="text-xl font-semibold mb-2">{item.name}</h2>
+                      <div className="flex justify-between text-sm mb-3">
+                        <p>⭐ Rating: {item.rating}</p>
+                        <p>⬇ Downloads: {item.downloads}</p>
                       </div>
                       <div className="card-actions justify-end">
-                        <button className="btn btn-primary">View</button>
+                        {user ?<NavLink to={`/app/${item.id}`} className="btn btn-primary btn-sm">View</NavLink> : <NavLink to={`/login`} className="btn btn-primary btn-sm">View</NavLink>}
+                        
                       </div>
                     </div>
                   </div>
+                  
                 ))}
             </div>
             </Marquee>

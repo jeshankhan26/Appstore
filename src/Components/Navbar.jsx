@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { use } from 'react';
 import Links from './Links';
 import { NavLink } from 'react-router';
 import logo from "../../public/Modern_Letter_S_Logo-removebg-preview (1).png";
+import { AuthContext } from '../../public/Provider/AuthProvider';
 
 const Navbar = () => {
+
+  const {user,logout}=use(AuthContext);
+
+  const handleLogout = () => {
+    logout()
+      .then(() => {
+        console.log("Logout successful");
+      })
+      .catch((error) => {
+        console.error("Logout error:", error);
+      });}
     return (
         <>
+        
         <div className="navbar bg-base-100 shadow-sm md:px-20">
   <div className="navbar-start">
     <div className="dropdown">
@@ -26,7 +39,8 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <NavLink to={`/login`} className="btn btn-primary btn-outline">Login</NavLink>
+  {user ? <button onClick={handleLogout} className="btn btn-primary btn-outline">Logout</button> :<NavLink to={`/login`} className="btn btn-primary btn-outline">Login</NavLink>}
+    
   </div>
 </div>
             

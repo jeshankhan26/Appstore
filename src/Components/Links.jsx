@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { use } from 'react';
 import { NavLink } from 'react-router';
+import { AuthContext } from '../../public/Provider/AuthProvider';
 
 const Links = () => {
+
+  const {user}=use(AuthContext);
     return (
         <>
             <li>
@@ -13,13 +16,16 @@ const Links = () => {
   </NavLink>
 </li>
 <li>
-  <NavLink 
-    to={`/profile`} 
-    className={({ isActive }) => isActive ? 'border border-blue-500 rounded px-2 py-1' : ''}
-  >
-    My Profile
-  </NavLink>
+    <NavLink
+      to={user ? `/app/${user.uid}` : '/login'}
+      className={({ isActive }) =>
+        isActive ? 'border text-blue-500 border-blue-500 rounded px-4 py-2' : ''
+      }
+    >
+      My Profile
+    </NavLink>
 </li>
+
 
         </>
     );
