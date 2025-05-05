@@ -1,0 +1,347 @@
+[
+  {
+    "id": "app001",
+    "name": "Programming Hero",
+    "developer": "Programming Hero Ltd.",
+    "thumbnail": "https://i.ibb.co/sWbb4Z5/programming-hero-thumb.jpg",
+    "banner": "https://i.ibb.co/vj5rT68/programming-hero-banner.jpg",
+    "downloads": 3500000,
+    "category": "Education",
+    "rating": 4.8,
+    "description": "Programming Hero is a fun and interactive way to learn programming. Whether you're a beginner or looking to brush up your skills, this app makes learning to code exciting and practical.",
+    "features": [
+      "Interactive coding lessons",
+      "Real-world projects",
+      "Gamified learning experience"
+    ],
+    "reviews": [
+      {
+        "user": "coder_nadia",
+        "rating": 5,
+        "comment": "Best app for beginners! The lessons are super easy to follow and engaging."
+      }
+    ]
+  },
+  {
+    "id": "app002",
+    "name": "FocusTime",
+    "developer": "ZenWare Inc.",
+    "thumbnail": "https://i.ibb.co/3ckKcVn/focustime-thumb.jpg",
+    "banner": "https://i.ibb.co/8zhFjRh/focustime-banner.jpg",
+    "downloads": 1200000,
+    "category": "Productivity",
+    "rating": 4.6,
+    "description": "FocusTime helps you stay productive using the Pomodoro technique, tracking your sessions and breaks.",
+    "features": [
+      "Pomodoro timer",
+      "Task tracker",
+      "Focus analytics"
+    ],
+    "reviews": [
+      {
+        "user": "time_keeper92",
+        "rating": 4,
+        "comment": "Great for staying on track during work!"
+      }
+    ]
+  },
+  {
+    "id": "app003",
+    "name": "FitLife",
+    "developer": "HealthFirst Apps",
+    "thumbnail": "https://i.ibb.co/Fnqpc3N/fitlife-thumb.jpg",
+    "banner": "https://i.ibb.co/8rjW3ck/fitlife-banner.jpg",
+    "downloads": 2200000,
+    "category": "Health",
+    "rating": 4.7,
+    "description": "FitLife is your personal fitness coach. Track workouts, set goals, and stay motivated.",
+    "features": [
+      "Workout routines",
+      "Fitness tracking",
+      "Meal planner"
+    ],
+    "reviews": [
+      {
+        "user": "fitfan123",
+        "rating": 5,
+        "comment": "Helped me lose 10kg in 3 months!"
+      }
+    ]
+  },
+  {
+    "id": "app004",
+    "name": "Daily English",
+    "developer": "LearnMate",
+    "thumbnail": "https://i.ibb.co/d2fxyDb/dailyenglish-thumb.jpg",
+    "banner": "https://i.ibb.co/t8yqDYh/dailyenglish-banner.jpg",
+    "downloads": 1800000,
+    "category": "Education",
+    "rating": 4.5,
+    "description": "Learn English with daily bite-sized lessons, vocab, and grammar tips.",
+    "features": [
+      "Daily lessons",
+      "Vocabulary quizzes",
+      "Grammar practice"
+    ],
+    "reviews": [
+      {
+        "user": "learner_mia",
+        "rating": 4,
+        "comment": "Very useful for improving my English!"
+      }
+    ]
+  },
+  {
+    "id": "app005",
+    "name": "CalmMind",
+    "developer": "Zen Studios",
+    "thumbnail": "https://i.ibb.co/WV1vVvf/calmmind-thumb.jpg",
+    "banner": "https://i.ibb.co/PcxD97v/calmmind-banner.jpg",
+    "downloads": 3000000,
+    "category": "Health",
+    "rating": 4.9,
+    "description": "Reduce stress and sleep better with guided meditations and relaxing sounds.",
+    "features": [
+      "Meditation library",
+      "Sleep sounds",
+      "Mood tracking"
+    ],
+    "reviews": [
+      {
+        "user": "peace_seeker",
+        "rating": 5,
+        "comment": "I sleep like a baby now. Amazing app!"
+      }
+    ]
+  },
+  {
+    "id": "app006",
+    "name": "TaskPro",
+    "developer": "Efficio Apps",
+    "thumbnail": "https://i.ibb.co/tq6kY3N/taskpro-thumb.jpg",
+    "banner": "https://i.ibb.co/BKbJvWm/taskpro-banner.jpg",
+    "downloads": 950000,
+    "category": "Productivity",
+    "rating": 4.4,
+    "description": "Organize your life with powerful task management and reminders.",
+    "features": [
+      "To-do lists",
+      "Reminders",
+      "Project tagging"
+    ],
+    "reviews": [
+      {
+        "user": "organizer101",
+        "rating": 4,
+        "comment": "Simple yet effective task manager."
+      }
+    ]
+  },
+  {
+    "id": "app007",
+    "name": "MindGym",
+    "developer": "BrainBoost Co.",
+    "thumbnail": "https://i.ibb.co/jHRFb6J/mindgym-thumb.jpg",
+    "banner": "https://i.ibb.co/T4qnp4M/mindgym-banner.jpg",
+    "downloads": 1700000,
+    "category": "Health",
+    "rating": 4.6,
+    "description": "Train your brain with puzzles and exercises designed to improve memory and focus.",
+    "features": [
+      "Brain training games",
+      "Memory tests",
+      "Daily exercises"
+    ],
+    "reviews": [
+      {
+        "user": "brainiac",
+        "rating": 5,
+        "comment": "Fun and useful at the same time!"
+      }
+    ]
+  },
+  {
+    "id": "app008",
+    "name": "StudyBuddy",
+    "developer": "StudyApp Devs",
+    "thumbnail": "https://i.ibb.co/1q7tH7H/studybuddy-thumb.jpg",
+    "banner": "https://i.ibb.co/S7WpYp6/studybuddy-banner.jpg",
+    "downloads": 1300000,
+    "category": "Education",
+    "rating": 4.3,
+    "description": "Stay focused while studying with timers, flashcards, and productivity tips.",
+    "features": [
+      "Study timers",
+      "Custom flashcards",
+      "Focus music"
+    ],
+    "reviews": [
+      {
+        "user": "topstudent",
+        "rating": 4,
+        "comment": "Keeps me in the zone during exams."
+      }
+    ]
+  },
+  {
+    "id": "app009",
+    "name": "WaterReminder",
+    "developer": "HealthyApps Inc.",
+    "thumbnail": "https://i.ibb.co/S0GyTSG/waterreminder-thumb.jpg",
+    "banner": "https://i.ibb.co/xhxvKq9/waterreminder-banner.jpg",
+    "downloads": 2400000,
+    "category": "Health",
+    "rating": 4.7,
+    "description": "Stay hydrated with timely water intake reminders based on your body type.",
+    "features": [
+      "Smart water tracker",
+      "Daily hydration goals",
+      "Custom alerts"
+    ],
+    "reviews": [
+      {
+        "user": "hydrate_me",
+        "rating": 5,
+        "comment": "Never forget to drink water again!"
+      }
+    ]
+  },
+  {
+    "id": "app010",
+    "name": "WriteRight",
+    "developer": "Writerly Ltd.",
+    "thumbnail": "https://i.ibb.co/3rZpbRc/writeright-thumb.jpg",
+    "banner": "https://i.ibb.co/xDx8Qzp/writeright-banner.jpg",
+    "downloads": 750000,
+    "category": "Productivity",
+    "rating": 4.2,
+    "description": "Write better with AI grammar and style suggestions in real-time.",
+    "features": [
+      "Grammar checker",
+      "Writing tone suggestions",
+      "Multi-language support"
+    ],
+    "reviews": [
+      {
+        "user": "blogger_ella",
+        "rating": 4,
+        "comment": "Super helpful for my blog writing."
+      }
+    ]
+  },
+  {
+    "id": "app011",
+    "name": "BudgetPal",
+    "developer": "FinApps Group",
+    "thumbnail": "https://i.ibb.co/DkH7sGZ/budgetpal-thumb.jpg",
+    "banner": "https://i.ibb.co/BcbynwT/budgetpal-banner.jpg",
+    "downloads": 1950000,
+    "category": "Productivity",
+    "rating": 4.5,
+    "description": "Track your spending and save money with easy budgeting tools.",
+    "features": [
+      "Expense tracking",
+      "Budget planner",
+      "Spending insights"
+    ],
+    "reviews": [
+      {
+        "user": "financefan",
+        "rating": 5,
+        "comment": "I finally have control over my money!"
+      }
+    ]
+  },
+  {
+    "id": "app012",
+    "name": "EduFun Kids",
+    "developer": "Bright Minds",
+    "thumbnail": "https://i.ibb.co/3M5PzqV/edufun-thumb.jpg",
+    "banner": "https://i.ibb.co/nRwVfNJ/edufun-banner.jpg",
+    "downloads": 860000,
+    "category": "Education",
+    "rating": 4.4,
+    "description": "Interactive learning games for kids to improve math, reading, and logic.",
+    "features": [
+      "Colorful mini-games",
+      "Early learning tools",
+      "Parental dashboard"
+    ],
+    "reviews": [
+      {
+        "user": "momof3",
+        "rating": 5,
+        "comment": "My kids love it and actually learn!"
+      }
+    ]
+  },
+  {
+    "id": "app013",
+    "name": "YogaFlex",
+    "developer": "StretchWell",
+    "thumbnail": "https://i.ibb.co/N3Yf5Zz/yogaflex-thumb.jpg",
+    "banner": "https://i.ibb.co/TqHVDhw/yogaflex-banner.jpg",
+    "downloads": 1150000,
+    "category": "Health",
+    "rating": 4.6,
+    "description": "Practice yoga anywhere with guided sessions and breathing exercises.",
+    "features": [
+      "Yoga poses & flows",
+      "Progress tracking",
+      "Relaxing audio"
+    ],
+    "reviews": [
+      {
+        "user": "zen_guru",
+        "rating": 5,
+        "comment": "Great for daily stress relief!"
+      }
+    ]
+  },
+  {
+    "id": "app014",
+    "name": "NoteCraft",
+    "developer": "ScribbleTech",
+    "thumbnail": "https://i.ibb.co/KWvCzKD/notecraft-thumb.jpg",
+    "banner": "https://i.ibb.co/YtDLRVc/notecraft-banner.jpg",
+    "downloads": 980000,
+    "category": "Productivity",
+    "rating": 4.3,
+    "description": "Take notes the smart way. Organize, tag, and sync your thoughts across devices.",
+    "features": [
+      "Smart tagging",
+      "Cloud sync",
+      "Voice notes"
+    ],
+    "reviews": [
+      {
+        "user": "notegeek",
+        "rating": 4,
+        "comment": "Clean UI and super functional!"
+      }
+    ]
+  },
+  {
+    "id": "app015",
+    "name": "QuizMaster",
+    "developer": "BrainSpark Studios",
+    "thumbnail": "https://i.ibb.co/gM2xLZP/quizmaster-thumb.jpg",
+    "banner": "https://i.ibb.co/wZpyrwM/quizmaster-banner.jpg",
+    "downloads": 690000,
+    "category": "Education",
+    "rating": 4.1,
+    "description": "Challenge yourself with quizzes across subjects and compete with friends.",
+    "features": [
+      "Timed quizzes",
+      "Leaderboard mode",
+      "Multiple subjects"
+    ],
+    "reviews": [
+      {
+        "user": "quizaddict",
+        "rating": 4,
+        "comment": "Addictive and educational!"
+      }
+    ]
+  }
+]
