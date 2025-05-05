@@ -38,6 +38,7 @@ const Login = () => {
         const user = result.user;
         console.log("Email/Password User:", user);
         alert("Login Successfully");
+        window.location.href = "/";
       })
       .catch((error) => {
         console.error("Login error:", error.message);
@@ -88,7 +89,7 @@ const Login = () => {
               <input
                 id="password"
                 name="password"
-                type={showPassword ? "text" : "password"} // TOGGLING TYPE
+                type={showPassword ? "text" : "password"} 
                 required
                 autoComplete="current-password"
                 className="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-600 sm:text-sm"

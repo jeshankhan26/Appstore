@@ -33,7 +33,7 @@ export const router = createBrowserRouter([
     Component: Profile ,
   },
   {
-    path: "/app/:id",
+    path: "/apps/:id",
     loader: () => fetch("/app_data.json"),
     Component: AppDetails ,
   },

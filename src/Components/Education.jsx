@@ -36,7 +36,7 @@ const Education = () => {
                   <p>⬇ Downloads: {item.downloads}</p>
                 </div>
                 <div className="card-actions justify-end">
-                        {user ?<NavLink to={`/app/${item.id}`} className="btn btn-primary btn-sm">View</NavLink> : <NavLink to={`/login`} className="btn btn-primary btn-sm">View</NavLink>}
+                        {user ?<NavLink to={`/apps/${item.id}`} className="btn btn-primary btn-sm">View</NavLink> : <NavLink to={`/login`} className="btn btn-primary btn-sm">View</NavLink>}
                         
                       </div>
               </div>
