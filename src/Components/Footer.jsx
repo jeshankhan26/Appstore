@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../public/Modern_Letter_S_Logo-removebg-preview (1).png";
+import { NavLink } from "react-router";
 
 const Footer = () => {
   return (
@@ -21,9 +22,9 @@ const Footer = () => {
         </nav>
         <nav>
           <h6 className="footer-title">Legal</h6>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
+          <NavLink to={`/terms`} className="link link-hover">Terms of use</NavLink>
+          <NavLink to={`/policy`} className="link link-hover">Privacy policy</NavLink>
+          <NavLink to={`/resources`} className="link link-hover">Developer Resources</NavLink>
         </nav>
       </footer>
       <footer className="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4">

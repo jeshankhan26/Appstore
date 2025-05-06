@@ -10,6 +10,9 @@ import CategoryApp from "../Components/CategoryApp";
 import CategoryAppList from "../Pages/CategoryAppList";
 import AppRoot from "../AppRoot";
 import AllApp from "../Components/AllApp";
+import Terms from "../Pages/Terms";
+import Policy from "../Pages/Policy";
+import Resources from "../Pages/Resources";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +23,18 @@ export const router = createBrowserRouter([
         index: true,
         loader: () => fetch("/app_data.json"),
         Component: Home ,
+      },
+      {
+        path: "/terms",
+        Component: Terms ,
+      },
+      {
+        path: "/policy",
+        Component: Policy ,
+      },
+      {
+        path: "/resources",
+        Component: Resources ,
       },
     ],
   },
