@@ -12,6 +12,7 @@ const Navbar = () => {
     logout()
       .then(() => {
         console.log("Logout successful");
+        window.location='/';
       })
       .catch((error) => {
         console.error("Logout error:", error);

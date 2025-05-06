@@ -13,6 +13,7 @@ const AuthProvider = ({children}) => {
 
     const logout = () => {
         return signOut(auth);
+        
     }
 
     const login = (email, password) => {

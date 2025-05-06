@@ -12,9 +12,20 @@ const Links = () => {
     to={`/`} 
     className={({ isActive }) => isActive ? 'border text-blue-500 border-blue-500 rounded px-4 py-2' : ''}
   >
-    Apps
+    Home
   </NavLink>
 </li>
+{
+  user ? <li>
+  <NavLink 
+    to={`/items`} 
+    className={({ isActive }) => isActive ? 'border text-blue-500 border-blue-500 rounded px-4 py-2 mx-3' : ''}
+  >
+    Apps
+  </NavLink>
+</li>:''
+}
+            
 <li>
     <NavLink
       to={user ? `/app/${user.uid}` : '/login'}
